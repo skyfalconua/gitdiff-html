@@ -1,0 +1,69 @@
+diff --git a/added.txt b/added.txt
+new file mode 100644
+index 0000000..39963cd
+--- /dev/null
++++ b/added.txt
+@@ -0,0 +1,2 @@
++brand new
++file
+diff --git a/cmd/main.go b/cmd/main.go
+index c7959b7..41fcd18 100644
+--- a/cmd/main.go
++++ b/cmd/main.go
+@@ -1,5 +1,7 @@
+ package main
+ 
+ func greet() string {
+-	return "hello <world> & friends"
++	return "hi <there> & \"friends\""
+ }
++
++func bye() {}
+diff --git a/legacy.txt b/legacy.txt
+deleted file mode 100644
+index 87c1cb7..0000000
+--- a/legacy.txt
++++ /dev/null
+@@ -1,2 +0,0 @@
+-obsolete
+-file
+diff --git a/logo.bin b/logo.bin
+index eaf36c1..85025d9 100644
+Binary files a/logo.bin and b/logo.bin differ
+diff --git a/notes.txt b/notes.txt
+index b2f931a..55a2cc0 100644
+--- a/notes.txt
++++ b/notes.txt
+@@ -3,3 +3,4 @@ two
+ three
+ four
+ five
++six
+\ No newline at end of file
+diff --git a/numbers.txt b/numbers.txt
+index ac9837c..3876787 100644
+--- a/numbers.txt
++++ b/numbers.txt
+@@ -1,5 +1,5 @@
+ line 1
+-line 2
++line 2 (edited)
+ line 3
+ line 4
+ line 5
+@@ -25,6 +25,7 @@ line 24
+ line 25
+ line 26
+ line 27
+-line 28
++line 28 (edited)
++line 28b (new)
+ line 29
+ line 30
+diff --git a/moved.txt b/renamed.txt
+similarity index 100%
+rename from moved.txt
+rename to renamed.txt
+diff --git a/run.sh b/run.sh
+old mode 100644
+new mode 100755

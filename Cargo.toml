@@ -1,0 +1,24 @@
+[package]
+name = "gitdiff-html"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Render a unified git diff as a single self-contained HTML page in the style of a GitHub pull request."
+license = "MIT"
+readme = "README.md"
+keywords = ["git", "diff", "html", "review"]
+categories = ["command-line-utilities", "development-tools"]
+
+[[bin]]
+name = "gitdiff-html"
+path = "src/main.rs"
+
+[dependencies]
+maud = "0.27"
+chrono = "0.4.45"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
